@@ -16,7 +16,6 @@ function App(props) {
       if (id === task.id) {
         return {...task, completed: !task.completed}
       }
-      logger.log('yes men');
       return task;
     });
     setTasks(updatedTasks);
